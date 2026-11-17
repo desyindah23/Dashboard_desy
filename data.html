@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Produk - Admin Tugu Malang</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-100 font-sans text-stone-800 flex min-h-screen">
+
+  <!-- SIDEBAR MENU KIRI -->
+  <aside class="w-64 bg-stone-900 text-white flex-col justify-between hidden md:flex">
+    <div>
+      <div class="p-6 border-b border-stone-800 flex items-center gap-3">
+        <div class="w-9 h-9 bg-amber-600 rounded-lg flex items-center justify-center font-bold text-lg">TM</div>
+        <div>
+          <h1 class="font-bold text-base leading-tight">Tugu Malang</h1>
+          <span class="text-xs text-stone-400">Admin Panel</span>
+        </div>
+      </div>
+
+      <nav class="p-4 space-y-2 text-sm font-medium">
+        <a href="dashboard.html" class="flex items-center gap-3 text-stone-300 hover:bg-stone-800 px-4 py-3 rounded-xl transition">
+          <span>📊</span> Dashboard
+        </a>
+        <a href="data.html" class="flex items-center gap-3 bg-amber-600 text-white px-4 py-3 rounded-xl shadow-md">
+          <span>📦</span> Data Produk (Tabel)
+        </a>
+        <a href="form.html" class="flex items-center gap-3 text-stone-300 hover:bg-stone-800 px-4 py-3 rounded-xl transition">
+          <span>➕</span> Input Produk (Form)
+        </a>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- KONTEN UTAMA KANAN -->
+  <div class="flex-1 flex flex-col">
+    <header class="bg-white border-b border-stone-200 px-8 py-4 flex justify-between items-center shadow-sm">
+      <h2 class="text-xl font-bold text-stone-800">Manajemen Data Produk</h2>
+      <a href="form.html" class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-xl text-sm font-semibold transition">
+        + Tambah Produk Baru
+      </a>
+    </header>
+
+    <main class="p-8 flex-1">
+      <div class="bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden">
+        <div class="p-6 border-b border-stone-100 flex justify-between items-center">
+          <h3 class="font-bold text-lg">Daftar Stok Varian Kue</h3>
+          <span class="text-xs bg-amber-100 text-amber-800 font-bold px-3 py-1 rounded-full">Total: 9 Produk</span>
+        </div>
+
+        <!-- TABEL DATA LENGKAP -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-sm">
+            <thead>
+              <tr class="bg-stone-50 border-b border-stone-200 text-stone-500 uppercase text-xs tracking-wider">
+                <th class="p-4">No</th>
+                <th class="p-4">Nama Varian</th>
+                <th class="p-4">Kategori / Label</th>
+                <th class="p-4">Harga</th>
+                <th class="p-4">Stok (Kotak)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-stone-100">
+              <tr class="hover:bg-stone-50/50">
+                <td class="p-4 font-semibold">1</td>
+                <td class="p-4 font-bold text-stone-900">Brownies Cokelat Keju</td>
+                <td class="p-4"><span class="bg-amber-100 text-amber-700 px-2.5 py-1 rounded-md text-xs font-semibold">Best Seller</span></td>
+                <td class="p-4 text-amber-700 font-bold">Rp 37.000</td>
+                <td class="p-4">24</td>
+              </tr>
+              <tr class="hover:bg-stone-50/50">
+                <td class="p-4 font-semibold">2</td>
+                <td class="p-4 font-bold text-stone-900">Brownies Apel Malang</td>
+                <td class="p-4"><span class="bg-emerald-100 text-emerald-700 px-2.5 py-1 rounded-md text-xs font-semibold">Khas Malang</span></td>
+                <td class="p-4 text-amber-700 font-bold">Rp 33.000</td>
+                <td class="p-4">18</td>
+              </tr>
+              <tr class="hover:bg-stone-50/50">
+                <td class="p-4 font-semibold">3</td>
+                <td class="p-4 font-bold text-stone-900">Brownies Black Forest</td>
+                <td class="p-4"><span class="bg-amber-100 text-amber-700 px-2.5 py-1 rounded-md text-xs font-semibold">Favorit</span></td>
+                <td class="p-4 text-amber-700 font-bold">Rp 40.000</td>
+                <td class="p-4">15</td>
+              </tr>
+              <tr class="hover:bg-stone-50/50">
+                <td class="p-4 font-semibold">4</td>
+                <td class="p-4 font-bold text-stone-900">Brownies Tiramisu</td>
+                <td class="p-4"><span class="bg-stone-100 text-stone-600 px-2.5 py-1 rounded-md text-xs font-semibold">Regular</span></td>
+                <td class="p-4 text-amber-700 font-bold">Rp 37.000</td>
+                <td class="p-4">20</td>
+              </tr>
+              <tr class="hover:bg-stone-50/50">
+                <td class="p-4 font-semibold">5</td>
+                <td class="p-4 font-bold text-stone-900">Brownies Choco Pandan</td>
+                <td class="p-4"><span class="bg-stone-100 text-stone-600 px-2.5 py-1 rounded-md text-xs font-semibold">Regular</span></td>
+                <td class="p-4 text-amber-700 font-bold">Rp 35.000</td>
+                <td class="p-4">12</td>
+              </tr>
+              <tr class="hover:bg-stone-50/50">
+                <td class="p-4 font-semibold">6</td>
+                <td class="p-4 font-bold text-stone-900">Brownies Original</td>
+                <td class="p-4"><span class="bg-stone-100 text-stone-600 px-2.5 py-1 rounded-md text-xs font-semibold">Regular</span></td>
+                <td class="p-4 text-amber-700 font-bold">Rp 35.000</td>
+                <td class="p-4">30</td>
+              </tr>
+              <tr class="hover:bg-stone-50/50">
+                <td class="p-4 font-semibold">7</td>
+                <td class="p-4 font-bold text-stone-900">Brownies Durian</td>
+                <td class="p-4"><span class="bg-stone-100 text-stone-600 px-2.5 py-1 rounded-md text-xs font-semibold">Regular</span></td>
+                <td class="p-4 text-amber-700 font-bold">Rp 40.000</td>
+                <td class="p-4">10</td>
+              </tr>
+              <tr class="hover:bg-stone-50/50">
+                <td class="p-4 font-semibold">8</td>
+                <td class="p-4 font-bold text-stone-900">Brownies Susu</td>
+                <td class="p-4"><span class="bg-stone-100 text-stone-600 px-2.5 py-1 rounded-md text-xs font-semibold">Regular</span></td>
+                <td class="p-4 text-amber-700 font-bold">Rp 35.000</td>
+                <td class="p-4">22</td>
+              </tr>
+              <tr class="hover:bg-stone-50/50">
+                <td class="p-4 font-semibold">9</td>
+                <td class="p-4 font-bold text-stone-900">Brownies Coklat</td>
+                <td class="p-4"><span class="bg-stone-100 text-stone-600 px-2.5 py-1 rounded-md text-xs font-semibold">Regular</span></td>
+                <td class="p-4 text-amber-700 font-bold">Rp 37.000</td>
+                <td class="p-4">25</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
