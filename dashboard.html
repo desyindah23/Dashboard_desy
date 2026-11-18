@@ -3,79 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard Admin - Tugu Malang</title>
+  <title>Dashboard Utama - Tugu Malang</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-stone-100 font-sans text-stone-800 flex min-h-screen">
+<body class="bg-stone-50 font-sans text-stone-800 min-h-screen flex flex-col justify-between">
 
-  <aside class="w-64 bg-stone-900 text-white flex-col justify-between hidden md:flex">
-    <div>
-      <div class="p-6 border-b border-stone-800 flex items-center gap-3">
-        <div class="w-9 h-9 bg-amber-600 rounded-lg flex items-center justify-center font-bold text-lg">TM</div>
-        <div>
-          <h1 class="font-bold text-base leading-tight">Tugu Malang</h1>
-          <span class="text-xs text-stone-400">Admin Panel</span>
-        </div>
-      </div>
-
-      <nav class="p-4 space-y-2 text-sm font-medium">
-        <a href="dashboard.html" class="flex items-center gap-3 bg-amber-600 text-white px-4 py-3 rounded-xl shadow-md">
-          <span>📊</span> Dashboard
-        </a>
-        <a href="data.html" class="flex items-center gap-3 text-stone-300 hover:bg-stone-800 px-4 py-3 rounded-xl transition">
-          <span>📦</span> Data Produk (Tabel)
-        </a>
-        <a href="form.html" class="flex items-center gap-3 text-stone-300 hover:bg-stone-800 px-4 py-3 rounded-xl transition">
-          <span>➕</span> Input Produk (Form)
-        </a>
-      </nav>
-    </div>
-    <div class="p-4 border-t border-stone-800 text-xs text-stone-500 text-center">
-      © 2026 Admin Tugu Malang
-    </div>
-  </aside>
-
-  <div class="flex-1 flex flex-col">
-    <header class="bg-white border-b border-stone-200 px-8 py-4 flex justify-between items-center shadow-sm">
-      <h2 class="text-xl font-bold text-stone-800">Dashboard Utama</h2>
+  <header class="bg-white border-b border-stone-200 shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
       <div class="flex items-center gap-3">
-        <span class="w-8 h-8 rounded-full bg-amber-600 text-white font-bold flex items-center justify-center text-sm">A</span>
-        <span class="text-sm font-semibold">Halo, Admin</span>
-      </div>
-    </header>
-
-    <main class="p-8 flex-1">
-      <h3 class="text-2xl font-extrabold mb-6">Ringkasan Toko Hari Ini</h3>
-      
-      <!-- Kartu Statistik -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
-          <span class="text-xs font-bold text-stone-400 uppercase">Total Pendapatan</span>
-          <div class="text-3xl font-extrabold text-amber-700 mt-2">Rp 1.450.000</div>
-          <span class="text-xs text-emerald-600 font-semibold mt-1 inline-block">↑ 12% dari kemarin</span>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
-          <span class="text-xs font-bold text-stone-400 uppercase">Pesanan Masuk</span>
-          <div class="text-3xl font-extrabold text-stone-900 mt-2">28 Kotak</div>
-          <span class="text-xs text-stone-500 mt-1 inline-block">Probolinggo Outlet</span>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
-          <span class="text-xs font-bold text-stone-400 uppercase">Total Varian Menu</span>
-          <div class="text-3xl font-extrabold text-stone-900 mt-2">9 Menu</div>
-          <span class="text-xs text-amber-600 font-semibold mt-1 inline-block">Stok Aman</span>
+        <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-amber-800 rounded-xl flex items-center justify-center font-bold text-white shadow-md">TM</div>
+        <div>
+          <h1 class="font-extrabold text-stone-900 leading-tight">Admin Tugu Malang</h1>
+          <span class="text-xs text-stone-500">Panel Pengelola Outlet</span>
         </div>
       </div>
 
-      <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
-        <h4 class="font-bold text-lg mb-4">Akses Cepat</h4>
-        <p class="text-sm text-stone-600 mb-4">Gunakan menu di samping atau tombol di bawah untuk mengelola data produk dan pesanan.</p>
-        <div class="flex gap-4">
-          <a href="data.html" class="bg-amber-600 text-white px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-amber-700 transition">Lihat Tabel Produk &rarr;</a>
-          <a href="form.html" class="border border-amber-600 text-amber-700 px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-amber-50 transition">Buka Form Tambah Produk &rarr;</a>
-        </div>
+      <nav class="flex items-center gap-2 bg-stone-100 p-1.5 rounded-2xl text-sm font-semibold">
+        <a href="dashboard.html" class="bg-white text-stone-900 shadow-sm px-5 py-2 rounded-xl transition">📊 Dashboard</a>
+        <a href="data.html" class="text-stone-600 hover:text-stone-900 px-5 py-2 rounded-xl transition">📦 Data Produk</a>
+        <a href="form.html" class="text-stone-600 hover:text-stone-900 px-5 py-2 rounded-xl transition">➕ Input Produk</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <span class="w-9 h-9 rounded-full bg-amber-600 text-white font-bold flex items-center justify-center text-sm shadow">A</span>
+        <span class="text-sm font-bold text-stone-700 hidden sm:inline">Halo, Admin</span>
       </div>
-    </main>
-  </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl w-full mx-auto px-6 py-10 flex-1">
+    <div class="mb-8">
+      <h2 class="text-3xl font-black text-stone-900">Ringkasan Toko Hari Ini</h2>
+      <p class="text-sm text-stone-500 mt-1">Berikut adalah pemantauan performa penjualan dan statistik outlet Probolinggo.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <div class="bg-white p-8 rounded-3xl border border-stone-200/80 shadow-sm relative overflow-hidden">
+        <div class="absolute -right-4 -bottom-4 text-7xl opacity-5">💰</div>
+        <span class="text-xs font-extrabold text-stone-400 uppercase tracking-wider">Total Pendapatan</span>
+        <div class="text-4xl font-black text-amber-700 mt-3">Rp 1.450.000</div>
+        <span class="text-xs bg-emerald-50 text-emerald-700 font-bold px-2.5 py-1 rounded-full mt-3 inline-block">↑ 12% dari kemarin</span>
+      </div>
+      <div class="bg-white p-8 rounded-3xl border border-stone-200/80 shadow-sm relative overflow-hidden">
+        <div class="absolute -right-4 -bottom-4 text-7xl opacity-5">📦</div>
+        <span class="text-xs font-extrabold text-stone-400 uppercase tracking-wider">Pesanan Masuk</span>
+        <div class="text-4xl font-black text-stone-900 mt-3">28 Kotak</div>
+        <span class="text-xs bg-stone-100 text-stone-600 font-bold px-2.5 py-1 rounded-full mt-3 inline-block">Soekarno-Hatta Outlet</span>
+      </div>
+      <div class="bg-white p-8 rounded-3xl border border-stone-200/80 shadow-sm relative overflow-hidden">
+        <div class="absolute -right-4 -bottom-4 text-7xl opacity-5">🍰</div>
+        <span class="text-xs font-extrabold text-stone-400 uppercase tracking-wider">Total Varian Menu</span>
+        <div class="text-4xl font-black text-stone-900 mt-3">9 Varian</div>
+        <span class="text-xs bg-amber-50 text-amber-700 font-bold px-2.5 py-1 rounded-full mt-3 inline-block">Stok Aman & Lengkap</span>
+      </div>
+    </div>
+
+    <div class="bg-gradient-to-br from-stone-900 to-stone-800 text-white p-8 md:p-10 rounded-3xl shadow-lg flex flex-col md:flex-row justify-between items-center gap-6">
+      <div>
+        <h3 class="text-xl font-bold mb-2">Ingin Mengelola Menu atau Menambah Stok Baru?</h3>
+        <p class="text-stone-300 text-sm max-w-xl">Pilih menu di atas atau gunakan tombol cepat di samping untuk langsung berpindah halaman dengan mudah.</p>
+      </div>
+      <div class="flex gap-4 w-full md:w-auto">
+        <a href="data.html" class="flex-1 md:flex-none bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-xl font-bold text-sm text-center shadow-md transition">Lihat Tabel Produk</a>
+        <a href="form.html" class="flex-1 md:flex-none bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-3 rounded-xl font-bold text-sm text-center transition">Tambah Produk</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-white border-t border-stone-200 py-6 text-center text-xs text-stone-500">
+    <p>© 2026 Bolu Kukus & Brownies Tugu Malang — Admin Dashboard</p>
+  </footer>
 
 </body>
 </html>
